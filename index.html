@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7d291b1501.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="font"><i style="color:rgb(54, 231, 54);padding:10px;" class="fab fa-spotify fa-3x"></i>&nbsp;<span class="span">Spotify</span></div> 
+            <div class="ul"><h4>
+                <div class="nav1"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;<span>Home</span></div><br>
+                <div class="nav2"><i class="fas fa-search"></i>&nbsp;&nbsp;&nbsp;<span>Search</span></div><br>
+                <div class="nav3"><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp;<span>Your Library</span></div><br><br>
+                <div class="nav4"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;<span>Create Playlist</span></div><br>
+                <div class="nav5"><i style="color:blueviolet;"class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp;<span>Liked Songs</span></div><br></h4>
+            </div> 
+        </div>
+        <div class="content">
+            <div class="contentNav">
+                <div class="div1">Upgrade</div>
+                <div class="div2">Sign In</div>
+            </div>
+            <div class="maincontent" id="maincontent">
+                <div class="advt">
+                    <div class="img">
+                        <img class="advtimg" src="images/addvertisement.PNG">
+                    </div>
+                </div>
+                <header class="top"><h3>&nbsp;&nbsp;&nbsp;Good Day</h3></header> 
+                <div id="toprow-1"></div>
+                <div id="toprow-2"></div>
+                <header id="header-1"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header> 
+                <div id="row-1"></div>
+                <header id="header-2"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-2"></div>
+                <header id="header-3"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-3"></div>
+                <header id="header-4"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-4"></div>
+                <header id="header-5"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-5"></div>
+                <header id="header-6"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-6"></div>
+                <header id="header-7"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-7"></div>
+                <header id="header-8"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-8"></div>
+                <header id="header-9"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-9"></div>
+                <header id="header-10"><h3>&nbsp;&nbsp;&nbsp;New Releases</h3></header>
+                <div id="row-10"></div>
+            </div>
+            <div class="queue" id="queue"></div>
+        </div>
+        <div class="login">
+            <h3>Friend activity</h3>
+            <p>Connect with Facebook to see what your friends are playing.</p>
+            <div class="icon" id="ic1"><i class="material-icons">person</i><img src="images/Capture.PNG"></div>
+            <div class="icon" id="ic2"><i class="material-icons">person</i><img src="images/Capture.PNG"></div>
+            <div class="icon" id="ic3"><i class="material-icons">person</i><img src="images/Capture.PNG"></div>
+            <div class="button">
+                <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;CONNECT 
+            </div>
+            <div class="song"><img src="images/Faded.jpg" id="playImg"></div>
+        </div>
+    </div>
+    <div class="bottom" id="bottom">
+        <div class="icons">
+            <div class="backward" id="prev">
+                <i class="fas fa-backward"></i>
+            </div>
+            <div class="play" id="playsong">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="forward" id="next">
+                <i class="fas fa-forward"></i>
+            </div>
+            <div class="songname" id="songname">
+                Alan Walker
+            </div>
+            <div class="playlist" id="playlist">
+                <i class="fas fa-book"></i>&nbsp;<span>View Queue</span>
+            </div>
+        </div>
+        <div class="timer">
+            <div id="currTime">0:00</div>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div id="durTime">0:00</div>
+            <div class="voldiv" id="voldiv">
+                <i class="fa fa-volume-up" style="font-size:12px"></i><input class="vol" id="volume" type="range"></input>
+            </div>
+        </div>
+        <audio src="music/MemeSongs.mp3" id="audio"></audio>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
